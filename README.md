@@ -144,3 +144,61 @@ La comparación NO es por largo sino alfabética, comparando el peso en valor AS
 **Función strcmpi:**
 
 Es exactamente igual a la función strcmp pero ignora si son mayúsculas o minúsculas es decir que el string “ANA” es igual al string “ana” y también es igual al string “anA” o cualquiera de sus variantes.
+
+## Guaradar datos en cadenas
+
+**getline()**
+La función getline() de C++ es una función incorporada definida en el archivo de encabezado <string.h> que permite aceptar y leer cadenas de una o varias líneas del flujo de entrada. En C++ , el objeto cin también permite la entrada del usuario, pero no la entrada de varias palabras o líneas. Ahí es donde resulta útil la función getline()
+
+Existen dos formas diferentes de declarar e inicializar la línea getline de C++: con tres parámetros y con dos parámetros. La sintaxis para declarar la función con tres parámetros es la siguiente:
+
+```getline
+istream& getline (istream& es, cadena& str, delimitador de caracteres);
+```
+
+1. **istream& es:** Este es el objeto de la clase istream para definir la ubicación, para leer el flujo de entrada.
+2. **istream& str:** Este es el objeto donde se almacena la cadena después de la lectura.
+3. **char delimiting:** Este es el carácter delimitador que marca el final de la toma de entradas.
+
+El segundo método para declarar la función getline() de C++ con dos parámetros es:
+
+```getline
+istream& getline( istream& es, cadena& str );
+```
+
+En la sintaxis anterior, istream&getline sirven para definir la función y los tres parámetros son:
+1. istream& es: Este es un objeto de la clase istream para especificar la ubicación para leer el flujo de entrada.
+2. istream& str: Este es el objeto donde se almacena la cadena después de la lectura.
+
+**cin.getline()**
+Esta función necesita tres datos o parámetros:
+
+1. **Nombre:** El nombre de la variable que va a contener el string
+2. **Longitud:** La cantidad de caracteres que queremos que se puedan introducir (nunca mayor que la longitud del string).
+3. **Caracter de fin:** El caracter que el usuario va usar como final de la cadena. Por lo general es el ‘enter‘ que se representa como ‘\n’ (diagonal n).
+
+Por ejemplo, supongamos que tenemos un arreglo char de 500 elementos llamado str (nuestra string) y queremos pedirle al usuario que la «llene», la función cin.getline quedaría así:
+
+```cin.getline
+cin.getline(str, 500, '\n');
+```
+
+Como ven, los parámetros van separados por comas (,), y el caracter de fin está entre comillas simples (‘). Pero bueno, dejemos de suponer y empecemos a programar.
+
+```cin.getline
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    char str[500];
+    cout << "Introduce una frase: ";
+    cin.getline(str, 500, '\n');
+    cout << "Tu frase es: " << str;
+    cin.get();
+}
+```
+
+## c_str()
+Transforma un __string__ en un cadena __char__ o no terminar en nulo.
+c_str devuelve un const char*que apunta a una cadena terminada en cero (es decir, una cadena de estilo C). Es útil cuando se desea pasar el "contenido"¹ de un std::stringa una función que espera trabajar con una cadena de estilo C.
