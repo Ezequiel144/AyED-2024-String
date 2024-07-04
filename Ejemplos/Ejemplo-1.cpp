@@ -42,12 +42,12 @@ int main()
 
     string text;
     cout << "Escribir algo de texto getline(): " << endl;
-    getline(cin,text);
+    getline(cin,text); // 
     cout << text << endl;
 
     char text2[] = "";
     cout << "Escribir algun texto para el cin.getline(): " << endl;
-    cin.getline(text2,50);
+    cin.getline(text2,50);  
     cout << text2;
     return 0;
 }
