@@ -1,7 +1,5 @@
 # AyED-2024-String
 
-AyED-2024-String
-
 ## Cadenas de caracteres (Strings) para lenguaje C
 
 El lenguaje C, a diferencia de otros lenguajes, hace un manejo muy particular de las variables para
