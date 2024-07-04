@@ -27,7 +27,7 @@ char nombre[20];
 
 Declara un vector de char de **20 posiciones**. Si en dicho vector se almacena un nombre corto, por ejemplo **“JUAN”**, dicho nombre solo ocupará 4 de los 20 caracteres, y por lo tanto, luego de la letra N se debe poner el carácter de fin de cadena indicando hasta donde llega dicho nombre
 
-![](file://C:\Users\Ezequiel\AppData\Roaming\marktext\images\2024-07-04-12-30-49-image.png?msec=1720107049836)
+![Imagen-1](file://C:\Users\Ezequiel\AppData\Roaming\marktext\images\2024-07-04-12-30-49-image.png?msec=1720107049836)
 
 ## Inicialización de Strings
 
@@ -37,13 +37,13 @@ Al declarar la memoria del string es posible asignar un valor, para ello se le a
 char nombre[20] = “ANA MARIA”;
 ```
 
-![](file://C:\Users\Ezequiel\AppData\Roaming\marktext\images\2024-07-04-12-32-21-image.png?msec=1720107141905)
+![Imagen-2](file://C:\Users\Ezequiel\AppData\Roaming\marktext\images\2024-07-04-12-32-21-image.png?msec=1720107141905)
 
 ```
 char nombre[] = “ANA MARIA”;
 ```
 
-![](file://C:\Users\Ezequiel\AppData\Roaming\marktext\images\2024-07-04-12-33-37-image.png?msec=1720107217591)
+![Imagen-3](file://C:\Users\Ezequiel\AppData\Roaming\marktext\images\2024-07-04-12-33-37-image.png?msec=1720107217591)
 
 Si no se especifica el tamaño automáticamente reserva la memoria mínima suficiente para almacenar el texto y el carácter de fin de cadena.
 
@@ -56,7 +56,7 @@ Si no se especifica el tamaño automáticamente reserva la memoria mínima sufic
 char nombre[3] = “MARCELO”;
 ```
 
-![](file://C:\Users\Ezequiel\AppData\Roaming\marktext\images\2024-07-04-12-35-51-image.png?msec=1720107351078)
+![Imagen-4](file://C:\Users\Ezequiel\AppData\Roaming\marktext\images\2024-07-04-12-35-51-image.png?msec=1720107351078)
 
 ## Biblioteca para el manejo de texto (string.h)
 
